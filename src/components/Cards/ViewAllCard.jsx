@@ -74,9 +74,7 @@ function ViewAllCard() {
 
   return (
     <VACard onClick={handleClick}>
-      <ImageWrapper>
-        <Image src={ViewAllCardImg}/>
-      </ImageWrapper>
+   
       <ContentHolder>
         <Icon />
         <Text>View All Projects</Text>

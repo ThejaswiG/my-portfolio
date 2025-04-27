@@ -24,9 +24,8 @@ const Home = ({ firebaseData, openModal, setOpenModal }) => {
   return (
     <>
       <Helmet>
-        <title>Thejaswi Gadhiraj | AI/ML & Web Developer Portfolio</title>
-        <meta name="description" content="Welcome to the portfolio of Thejaswi Gadhiraj, showcasing skills, projects, and experiences in AI/ML and Web Development." />
-        <meta name="keywords" content="MyMind, Thejaswi Gadhiraj, Machine Learning, Python Developer, Frontend Developer, Fullstack Developer, Squad of Creators, Portfolio" />
+        <title>Thejaswi Gadhiraj  Portfolio</title>
+        
       </Helmet>
 
       <Navbar 
