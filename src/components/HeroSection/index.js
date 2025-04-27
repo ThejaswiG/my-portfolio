@@ -27,32 +27,19 @@ const HeroSection = ({ heroData }) => {
                 </HeroBg>
                 <HeroInnerContainer>
                     <HeroLeftContainer>
-                        <Title>Hi, I am <br /> {heroData?.name}</Title>
+                        <Title>Hi, I am SDE <br /> {heroData?.name}</Title>
                         <TextLoop>
-                            I am a
-                            <Span>
-                                <Typewriter
-                                    options={{
-                                        strings: heroData?.roles || [],
-                                        autoStart: true,
-                                        loop: true,
-                                    }}
-                                />
-                            </Span>
+                            I am a Developer
+                    
                         </TextLoop>
-                        <SubTitle>{heroData?.description}</SubTitle>
-                        <ResumeButton 
-                            href={heroData?.resume} 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            aria-label="View my resume"
-                        >
-                            Check My CV
-                        </ResumeButton>
+                        <SubTitle>Hi, I’m Thejaswi Gadhiraju — a passionate and results-driven Software Engineer with strong expertise in backend development and full-stack solutions. I’ve had the privilege of working at industry-leading companies like Apple and Volkswagen Group of America, where I contributed to building scalable systems, enhancing application performance, and solving complex engineering challenges.
+
+With a solid foundation in computer science and a commitment to writing clean, efficient, and maintainable code, I take pride in delivering high-quality solutions that drive real-world impact. Outside of coding, I enjoy traveling, staying active with sports, and immersing myself in music and movies.</SubTitle>
+                        
                     </HeroLeftContainer>
 
                     <HeroRightContainer>
-                        <Img src={profile_pic} alt={`Sibi Siddharth S - Profile Picture`}/>
+                        <Img src={profile_pic} alt={`Thejaswi Gadhiraj - Profile Picture`}/>
                     </HeroRightContainer>
                 </HeroInnerContainer>
             </HeroContainer>

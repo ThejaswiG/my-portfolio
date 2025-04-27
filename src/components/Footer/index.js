@@ -4,7 +4,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GetAppIcon from '@mui/icons-material/GetApp';
 import { GitHub } from '@mui/icons-material';
-import logo from '../../images/MyLogo.png';
+// import logo from '../../images/MyLogo.png';
 import { Link } from 'react-scroll'; // Import Link from react-scroll
 
 const FooterContainer = styled.div`
@@ -106,8 +106,24 @@ const Copyright = styled.p`
   text-align: center;
 `;
 
-const Footer = ({ footerData, links=[] }) => {
+
+
+const Footer = ({ footerData1, links=[] }) => {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
+  const footerData = {
+    "description": "As a final-year B.Tech AI & Data Science student at Kathir College of Engineering, I’m not just studying technology—I’m living it. With a passion for AI/ML and full-stack development, I strive to create solutions that shape the future. I believe technology can change the world, and I’m ready to be part of that change.",
+    "github": "https://github.com/ThejaswiG",
+    "insta": "https://www.instagram.com/tejugadhiraju/",
+    "linkedin": "https://www.linkedin.com/in/thejaswigadhiraju",
+    "name": "Thejaswi Gadhiraj",
+    "profilepic": "",
+    "resume": "",
+    "roles": [
+      "Full Stack Developer",
+      "Python Developer",
+      "AI/ML Developer"
+    ]
+  }
 
   useEffect(() => {
     const handleBeforeInstallPrompt = (e) => {
@@ -132,9 +148,9 @@ const Footer = ({ footerData, links=[] }) => {
     <FooterContainer>
       <FooterWrapper>
         <a href="">
-          <LogoImg src={logo} alt="Sibi Siddharth S Logo MyMind" />
+  
         </a>
-        <Logo>Sibi Siddharth S</Logo>
+        <Logo>Thejaswi Gadhiraju</Logo>
         <Nav>
           {links.map((link, index) => (
             <NavLink
@@ -151,7 +167,7 @@ const Footer = ({ footerData, links=[] }) => {
         </Nav>
         <SocialMediaIcons>
           <SocialMediaIcon
-            href={footerData?.github || '#'}
+            href={"https://github.com/ThejaswiG"}
             target="_blank"
             aria-label="GitHub profile"
           >
@@ -171,14 +187,14 @@ const Footer = ({ footerData, links=[] }) => {
           >
             <InstagramIcon />
           </SocialMediaIcon>
-          {deferredPrompt && (
+          {/* {deferredPrompt && (
             <InstallIconWrapper onClick={handleInstallClick} aria-label="Install App">
               <GetAppIcon />
             </InstallIconWrapper>
-          )}
+          )} */}
         </SocialMediaIcons>
         <Copyright>
-          &copy; {new Date().getFullYear()} Sibi Siddharth S. All rights reserved.
+          &copy; {new Date().getFullYear()} Thejaswi Gadhiraj. All rights reserved.
         </Copyright>
       </FooterWrapper>
     </FooterContainer>

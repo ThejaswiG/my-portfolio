@@ -71,7 +71,37 @@ const TimelineSection = styled.div`
   }
 `;
 
-const EducationTimeline = ({ education }) => {
+const EducationTimeline = ( ) => {
+  const education = [
+    {
+      "date": " Graduated May 2020",
+      "degree": "Master of Science in Computer Science",
+      "desc": "Completed a 30-credit program focusing on both theoretical and practical aspects of computer science. Coursework included Algorithm Design, Database Systems, Software Engineering, and Artificial Intelligence. Engaged in a capstone project, applying learned skills to real-world problems.",
+      "grade": "GPA: 3.6",
+      "id": 0,
+      "img": "https://upload.wikimedia.org/wikipedia/en/0/02/University_of_Dayton.svg",
+      "school": "University of Dayton, Ohio"
+    },
+    {
+      "date": "2014 - 2018",
+      "degree": "Bachelor of Technology (B.Tech) in Electronics and Computer Engineering",
+      "desc": "Completed a comprehensive undergraduate program integrating core concepts from both Computer Science and Electronics Engineering. The curriculum encompassed foundational and advanced courses, providing a multidisciplinary skill set.",
+      "grade": "GPA: 3.47 (First Class with Distinction)",
+      "id": 1,
+      "img": "https://free-images.com/md/71bc/snist_logo.jpg",
+      "school": "Sreenidhi Institute of Science and Technology, Hyderabad, India"
+    },
+    {
+      "date": "2012 - 2014",
+      "degree": "Intermediate Education (Class XI & XII)",
+      "desc": "Completed a rigorous two-year intermediate program with a focus on Mathematics, Physics, and Chemistry. Achieved a commendable aggregate of 91%, laying a strong foundation for advanced studies in engineering and technology.",
+      "grade": "Percentage: 91%",
+      "id": 2,
+      "img": "https://www.narayanagroup.com/images/logo.png",
+      "school": "Narayana Junior College, Hyderabad, India"
+    }
+  ]
+  
   return (
     <Container id="education">
       <Wrapper>

@@ -128,7 +128,7 @@ const EducationCard = ({ education }) => {
             <Top>
                 <Image 
                     src={education.img} 
-                    alt={`${education.school} - Sibi Siddharth S`} 
+                    alt={`${education.school} - Thejaswi Gadhiraju`} 
                 />
                 <Body>
                     <Name>{education.school}</Name>

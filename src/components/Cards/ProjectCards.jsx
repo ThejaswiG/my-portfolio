@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { FaGithub } from "react-icons/fa"; 
 import { RiHeartAddFill } from "react-icons/ri";
 
-const githubsponslink = 'https://github.com/sponsors/sibisiddharth8';
+const githubsponslink = 'https://github.com/sponsors/thejaswivarma';
 
 const Button = styled.button`
     display: none;
@@ -211,7 +211,7 @@ const ProjectCards = ({ project, setOpenModal }) => {
                 <Date dateTime={project.date}>{project.date}</Date>
                 <Description>{project.description}</Description>
             </Details>
-            <CardDataHolder>
+            {/* <CardDataHolder>
                 <Members>
                     {project.member?.map((member, index) => (
                         <Avatar
@@ -242,7 +242,7 @@ const ProjectCards = ({ project, setOpenModal }) => {
                         <RiHeartAddFill size={26} />
                     </SocialMediaIcon>
                 </CardIcons>
-            </CardDataHolder>
+            </CardDataHolder> */}
         </Card>
     );
 };

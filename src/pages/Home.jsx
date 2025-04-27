@@ -24,16 +24,16 @@ const Home = ({ firebaseData, openModal, setOpenModal }) => {
   return (
     <>
       <Helmet>
-        <title>Sibi Siddharth S | AI/ML & Web Developer Portfolio</title>
-        <meta name="description" content="Welcome to the portfolio of Sibi Siddharth S, showcasing skills, projects, and experiences in AI/ML and Web Development." />
-        <meta name="keywords" content="MyMind, Sibi Siddharth S, Machine Learning, Python Developer, Frontend Developer, Fullstack Developer, Squad of Creators, Portfolio" />
-        <link rel="canonical" href="https://sibisiddharth8.github.io/portfolio-react/" />
+        <title>Thejaswi Gadhiraj | AI/ML & Web Developer Portfolio</title>
+        <meta name="description" content="Welcome to the portfolio of Thejaswi Gadhiraj, showcasing skills, projects, and experiences in AI/ML and Web Development." />
+        <meta name="keywords" content="MyMind, Thejaswi Gadhiraj, Machine Learning, Python Developer, Frontend Developer, Fullstack Developer, Squad of Creators, Portfolio" />
       </Helmet>
 
       <Navbar 
-        navbarData={firebaseData.Bio || {}} 
+        navbarData={{github : "https://github.com/ThejaswiG"}} 
         sections={['About', 'Skills', 'Experience', 'Projects', 'Education']} 
-      />
+        links={["About", "Skills", "Experience", "Projects", "Education"]} 
+      /> 
 
       <HeroSection 
         heroData={firebaseData.Bio || {}} 

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import emailjs from '@emailjs/browser';
 import { Snackbar, Alert } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -13,6 +13,22 @@ const Container = styled.div`
   align-items: center;
   @media (max-width: 960px) {
     padding: 0px;
+  }
+`;
+
+const SocialMediaIcons = styled.div`
+  display: flex;
+  margin-top: 1rem;
+`;
+
+const SocialMediaIcon = styled.a`
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  color: ${({ theme }) => theme.text_primary};
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: ${({ theme }) => theme.primary};
   }
 `;
 
@@ -196,58 +212,23 @@ const Contact = () => {
       <Wrapper>
         <Title>Contact</Title>
         <Desc>Feel free to reach out to me for any questions or collaboration!</Desc>
-        <ContactForm ref={form} onSubmit={handleSubmit}>
-          <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput
-            placeholder="Your Email"
-            name="from_email"
-            type="email"
-            required
-            aria-label="Your Email"
-          />
-          <ContactInput
-            placeholder="Your Name"
-            name="from_name"
-            type="text"
-            required
-            aria-label="Your Name"
-          />
-          <ContactInput
-            placeholder="Subject"
-            name="subject"
-            type="text"
-            required
-            aria-label="Subject"
-          />
-          <ContactInputMessage
-            placeholder="Message"
-            rows="4"
-            name="message"
-            required
-            aria-label="Message"
-          />
-          <TcContainer>
-            <input
-              type="checkbox"
-              checked={termsAccepted}
-              onChange={(e) => setTermsAccepted(e.target.checked)}
-              aria-label="Accept terms and conditions"
-            />
-            <TcText>
-              I agree with the <TC onClick={handleClick} >Terms and Conditions</TC>
-            </TcText>
-          </TcContainer>
-          <ContactButton type="submit" value="Send" disabled={!termsAccepted} aria-label="Send Email" />
-        </ContactForm>
-        <Snackbar
-          open={open.open}
-          autoHideDuration={6000}
-          onClose={() => setOpen(prev => ({ ...prev, open: false }))}
-        >
-          <Alert onClose={() => setOpen(prev => ({ ...prev, open: false }))} severity={open.severity}>
-            {open.message}
-          </Alert>
-        </Snackbar>
+        <Desc>
+  <a href="mailto:thejaswivarma@gmail.com" style={{ textDecoration: 'none', color: 'inherit' }}>
+    📧 thejaswivarma@gmail.com
+  </a>
+  <br></br>
+
+  <label>LinkedIn : </label>
+  <SocialMediaIcon
+            href={`https://www.linkedin.com/in/thejaswigadhiraju`}
+            target="_blank"
+            aria-label="LinkedIn profile"
+          >
+            <LinkedInIcon />
+          </SocialMediaIcon>
+</Desc>
+
+
       </Wrapper>
     </Container>
   );

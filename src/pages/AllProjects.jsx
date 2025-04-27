@@ -23,24 +23,22 @@ function AllProjects({ firebaseData, openModal, setOpenModal }) {
   return (
     <>
       <Helmet>
-        <title>Projects | Sibi Siddharth S Portfolio</title>
-        <meta name="description" content="MyMind - the portfolio of Sibi Siddharth S, showcasing Web, Machine Learning, Deep Learning, and Python projects." />
-        <meta name="keywords" content="MyMind, Sibi Siddharth S, AI/ML, Web Development, Portfolio, Projects, sibi, siddharth" />
-        <meta name="author" content="Sibi Siddharth S" />
-        <link rel="canonical" href="https://sibisiddharth8.github.io/portfolio-react/#/AllProjects" />
+        <title>Projects | Thejaswi Gadhiraj Portfolio</title>
+        <meta name="description" content="MyMind - the portfolio of Thejaswi Gadhiraj, showcasing Web, Machine Learning, Deep Learning, and Python projects." />
+        <meta name="keywords" content="MyMind, Thejaswi Gadhiraj, AI/ML, Web Development, Portfolio, Projects, sibi, siddharth" />
+        <meta name="author" content="Thejaswi Gadhiraj" />
+        <link rel="canonical" href="https://thejaswivarma.github.io/portfolio-react/#/AllProjects" />
 
         {/* Open Graph Data */}
-        <meta property="og:title" content="MyMind - Sibi Siddharth S Portfolio | Projects" />
+        <meta property="og:title" content="MyMind - Thejaswi Gadhiraj Portfolio | Projects" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://sibisiddharth8.github.io/portfolio-react/#/AllProjects" />
-        <meta property="og:image" content="https://sibisiddharth8.github.io/portfolio-react/Og-card-banner-SibiSiddharthS.png" />
-        <meta property="og:description" content="Explore projects developed by Sibi Siddharth S, showcasing skills in AI/ML and Web Development." />
+        <meta property="og:url" content="https://thejaswivarma.github.io/portfolio-react/#/AllProjects" />
+        <meta property="og:description" content="Explore projects developed by Thejaswi Gadhiraj, showcasing skills in AI/ML and Web Development." />
 
         {/* Twitter Card Data */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="MyMind - Projects" />
-        <meta name="twitter:description" content="Explore projects developed by Sibi Siddharth S." />
-        <meta name="twitter:image" content="https://sibisiddharth8.github.io/portfolio-react/Og-card-banner-SibiSiddharthS.png" />
+        <meta name="twitter:description" content="Explore projects developed by Thejaswi Gadhiraj." />
       </Helmet>
 
       <Header 
